@@ -1,0 +1,14 @@
+<div class="" style='text-align:center;'>
+  <h1>| Welcome to WORDCOUNTER |</h1>
+  <a href="{% url 'homepage'%}">Try Again</a>
+  <h2> Your text contains total {{count}} words.</h2>
+  <h2>Your text:</h2>
+  <h3>{{ fulltext }}</h3>
+
+  <h3>WordCount</h3>
+  {% for word, counter in alllist%}
+  {{word}} -  {{counter}}<br>
+  {% endfor %}
+
+
+</div>

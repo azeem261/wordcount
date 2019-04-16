@@ -1,0 +1,10 @@
+<div class="" style='text-align:center;'>
+  <h1>| Welcome to WORDCOUNTER |</h1>
+<h3><a href="{% url 'about'%}"><button type="button" name="button">About</button></a></h3>
+  <form class="" action="{% url 'count' %}">
+    <textarea name="fulltext" rows="8" cols="60" placeholder="Enter your text here."></textarea>
+    <br> <br>
+    <input type="submit" name="submit" value="Count"/>
+  </form>
+
+</div>
